@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- (C) Kevin Mah and Kai Sugihara -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Update a Record in a Table</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <form method="post" action="php/selectAllQuery.php">
+      <fieldset>
+        <legend>Display All Students</legend>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+    <br>
+    <br>
+    <form method="post" action="php/selectLikeQuery.php">
+      <fieldset>
+        <legend>Display Students whose ID starts with</legend>
+        <label>Student ID Starts with</label>
+        <input type="text" name="stdId"> <br>
+        <br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+    <br>
+    <br>
+    <form method="post" action="php/selectWhereQuery.php">
+      <fieldset>
+        <legend>Display Students From a Specific Company</legend>
+        <label>Company Name</label> <input type="text" name="comp"> <br>
+        <br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+    <a href="index.html">Back to the Homepage</a>
+  
+
+</body></html>

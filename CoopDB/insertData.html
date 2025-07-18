@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<!-- (C) Kevin Mah and Kai Sugihara -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Insert Data Into a Database</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form method="post" action="php/insertIntoValues.php">
+      <fieldset>
+        <legend>Enter the information of the student:</legend>
+
+        <label>Student ID </label><input type="number" name="stdId" /> <br />
+        <label>Company Name</label><input type="text" name="cName" /> <br />
+        <label>Application Date</label><input type="date" name="appDate" /> <br />
+        <label>Position</label><input type="text" name="position" /> <br />
+        <label>Hired Status</label>
+        <select name="hired">
+          <option>Hired</option>
+          <option>Not Hired</option>
+          <option>Status Pending</option>
+        </select>
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br />
+    <a href="index.html">Back to the homepage</a>
+  </body>
+</html>

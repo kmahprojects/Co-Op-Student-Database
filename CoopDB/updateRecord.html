@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<!-- (C) Kevin Mah and Kai Sugihara -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Update a Record in a Table</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <p>Update the application status, given their student ID, company, and position:</p>
+    <form method="post" action="php/updateRecord.php">
+      <label>Student ID</label> <input type="number" name="stdId" /> <br />
+      <label>Company Name</label><input type="text" name="cName" /> <br />
+      <label>Position</label><input type="text" name="position" /> <br />
+
+      <p>Change the hired status to:</p>
+      <label>Hired Status</label>
+        <select name="hired">
+          <option>Hired</option>
+          <option>Not Hired</option>
+          <option>Status Pending</option>
+        </select>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <a href='index.html'>Back to the Homepage</a>
+  </body>
+</html>
